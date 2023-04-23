@@ -7,8 +7,9 @@ Created on Sat Apr 22 07:49:41 2023
 
 import pandas as pd
 from tqdm import tqdm
-df = pd.read_csv(r'D:\learn\senti\data\one.csv',sep='|')
-df1 = pd.read_csv(r'D:\learn\senti\data\two.csv',sep='|')
+loc = r'D:\learn\senti\data\\'
+df = pd.read_csv(loc + 'one.csv',sep='|')
+df1 = pd.read_csv(loc + 'two.csv',sep='|')
 
 df = pd.concat([df, df1])
 del df1
